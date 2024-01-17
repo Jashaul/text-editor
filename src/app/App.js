@@ -12,7 +12,7 @@ function App() {
                 <div class="text-xl font-medium text-black">
                 Demo editor by Jashaul
                 </div>
-                <Button onClickHandler={saveState(editorState.getCurrentContent())} />
+                <Button onClickHandler={() => saveState(editorState.getCurrentContent())} />
             </div>
             <Editor editorState={editorState} setEditorState={setEditorState} />
         </div>
